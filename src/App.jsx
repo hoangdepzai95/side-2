@@ -1,7 +1,7 @@
 import React from 'react';
 import { Provider } from 'react-redux';
-import { createStore, applyMiddleware  } from 'redux';
-import createSagaMiddleware from 'redux-saga'
+import { createStore, applyMiddleware } from 'redux';
+import createSagaMiddleware from 'redux-saga';
 
 import Router from './Router';
 import reducers from './reducers';
@@ -21,6 +21,6 @@ const App = () => {
       <Router />
     </Provider>
   );
-}
+};
 
 export default App;

@@ -5,9 +5,9 @@ import Wellcome from './scenes/wellcome';
 
 const RouterComponent = () => {
   return (
-    <Router hideNavBar={true}>
+    <Router hideNavBar >
       <Scene key="wellcomeArea">
-        <Scene key="wellcome" component={Wellcome} inital/>
+        <Scene key="wellcome" component={Wellcome} inital />
       </Scene>
     </Router>
   );
