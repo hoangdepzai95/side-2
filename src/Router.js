@@ -1,10 +1,16 @@
 import React from 'react';
 import { Scene, Router } from 'react-native-router-flux';
-const Router = () => {
+
+import Wellcome from './scenes/wellcome';
+
+const RouterComponent = () => {
   return (
-    <Router>
+    <Router hideNavBar={true}>
+      <Scene key="wellcomeArea">
+        <Scene key="wellcome" component={Wellcome} inital/>
+      </Scene>
     </Router>
   );
 };
 
-export default Router;
+export default RouterComponent;
